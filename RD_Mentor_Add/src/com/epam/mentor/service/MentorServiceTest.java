@@ -1,7 +1,9 @@
 package com.epam.mentor.service;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -11,6 +13,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import com.epam.mentor.bean.MentorBean;
+import com.epam.mentor.util.DBUtil;
 
 class MentorServiceTest {
 
@@ -36,4 +39,8 @@ class MentorServiceTest {
 		mb.setTechnologyStream("cse");
 		assertEquals("success",ms.addMentor(mb));
 	}
+	
+	
+	
+	
 }
