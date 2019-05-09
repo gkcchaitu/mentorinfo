@@ -31,7 +31,7 @@ class MentorServiceTest {
 		Date d=sdf.parse(s);
 		MentorBean mb = new MentorBean();
 		mb.setName("chaitu");
-		mb.setEmail(null);
+		mb.setEmail("c@yahoo.com");
 		mb.setMaxNoOfMentees(5); 
 		mb.setMentorEndDate(d);
 		mb.setMentorStartDate(d);
